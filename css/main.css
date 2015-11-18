@@ -1,0 +1,260 @@
+/*
+font-family: 'Avenir 35 Light'
+font-family: 'Avenir 55 Roman'
+font-family: 'Avenir 85 Heavy'
+font-family: 'Avenir 65 Medium'
+font-family: 'Raleway', sans-serif;
+*/
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+nav{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px; 
+}
+
+
+body {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 14px;
+}
+
+
+.name {
+	text-align: left;
+	position: relative;
+	top: 40px;
+}
+
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	bottom: 30px;
+	width: 85px;
+	height: 75px;
+}
+
+
+
+.menu {
+	text-align: center;
+}
+
+
+.menu li {
+	display: inline;
+	position: relative;
+	bottom: 10px;
+}
+
+
+
+.photography, .music, .video, .design, .about {
+	color: black
+}
+
+
+.photography:hover, .music:hover, .video:hover, .design:hover, .about:hover {
+	text-decoration: none;
+	color: white;
+	border: solid black;
+	background-color: black;
+	padding-left: 1px
+}
+
+.photography:active, .music:active, .video:active, .design:active, .about:active {
+	text-decoration: none;
+	color: black
+}
+
+
+.homeimage {
+	display: block;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	height: 600px;
+	width: 1000px
+}
+
+ .aboutcontent{
+ 	position:relative;
+ 	top: 20px;
+ }
+
+.aboutimage{
+	height: 350px;
+	width: 550px;
+	position: relative;
+	top: 40px;
+	right: 50px
+}
+
+
+.abouttext{
+	position: relative;
+	left: 75px;
+	bottom: 260px;
+	padding-left: 525px;
+	padding-right: 80px;
+	text-align: center
+}
+
+
+.icons{
+	position: relative;
+	left: 675px;
+	bottom: 315px;
+	width: 300px;
+	height: 50px
+}
+
+
+.linkedin, .youtube, .tumblr, .instagram{
+	height: 50px;
+	width: 50px;
+	padding: 5px
+}
+
+
+
+.left{
+	width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 25px;
+
+}
+
+
+
+.right{
+	width: 300px;
+	height: 300px;
+   	position: absolute;
+   	left: 680px;  
+}
+
+
+.photocontent img{
+	height: auto; 
+    width: auto; 
+    max-width: 600px; 
+    max-height: 700px;
+    padding: 30px;
+}
+
+.photocontent img:hover{
+	opacity: 0.45;
+}
+
+
+
+.photocontent img:active{
+	max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+ } 
+
+
+
+/*.photocontent img:active{
+	max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: black;
+    opacity: 1;
+}*/
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+	#screen_1200 {
+		display: block;
+	}
+
+}
+/* Tablet */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	#screen_992 {
+		display: block;
+	}
+
+}
+/* Mobile */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	#screen_768 {
+		display: block;
+	}
+
+}
+/* Smaller Mobile */
+@media only screen and (max-width: 767px) {
+	#screen_small {
+		display: block;
+	}
+
+}
+
+/* Specific Mobile Device Media Queries */
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) { 
+	#screen_iPhone6Plus {
+		display: block;
+	}
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (device-aspect-ratio: 375/667) { 
+	#screen_iPhone6 {
+		display: block;
+	}
+}
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait and Landscape */
+@media screen and (device-width: 360px) and (device-height: 640px) {
+	#screen_GalaxyS5{
+		display: block;
+	}
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (device-aspect-ratio: 40/71) {
+	#screen_iPhone5 {
+		display: block;
+	}
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (device-aspect-ratio: 2/3) {
+	#screen_iPhone4 {
+		display: block;
+	}
+}
