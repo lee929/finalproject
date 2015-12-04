@@ -54,20 +54,21 @@ body {
 
 
 
-.photography, .music, .video, .design, .about {
+.photography, .music, .video, .about {
 	color: black
 }
 
 
-.photography:hover, .music:hover, .video:hover, .design:hover, .about:hover {
+.photography:hover, .music:hover, .video:hover, .about:hover {
 	text-decoration: none;
 	color: white;
 	border: solid black;
 	background-color: black;
-	padding-left: 1px
+	padding-left: 1px;
+	border-radius: 2px
 }
 
-.photography:active, .music:active, .video:active, .design:active, .about:active {
+.photography:active, .music:active, .video:active, .about:active {
 	text-decoration: none;
 	color: black
 }
@@ -82,23 +83,28 @@ body {
 	width: 1000px
 }
 
+
+
+/* ---------------end of nav stuff----------------*/
+
+
+
  .aboutcontent{
  	position:relative;
  	top: 20px;
  }
 
 .aboutimage{
-	height: 350px;
-	width: 550px;
+	max-height: 400px;
 	position: relative;
-	top: 40px;
-	right: 50px
+	top: 30px;
+	left: 200px
 }
 
 
 .abouttext{
 	position: relative;
-	left: 75px;
+	left: 50px;
 	bottom: 260px;
 	padding-left: 525px;
 	padding-right: 80px;
@@ -108,7 +114,7 @@ body {
 
 .icons{
 	position: relative;
-	left: 675px;
+	left: 740px;
 	bottom: 315px;
 	width: 300px;
 	height: 50px
@@ -120,6 +126,55 @@ body {
 	width: 50px;
 	padding: 5px
 }
+
+
+
+/* ---------------end of about stuff----------------*/
+
+
+
+.albums{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 28px }
+
+.album1, .google {
+	border-style: solid;
+	color: black;
+	border-width: 1px;
+	display: block;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	padding-top: 80px;
+	border-radius: 3px
+}
+
+
+.album1:hover, .google:hover{
+	text-decoration: none;
+	background-color: lightgray;
+	color: white;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.album1 {
+	position: relative;
+	top: 20px;
+	left: 80px
+}
+
+
+.google {
+	position: relative;
+	bottom: 180px;
+	left: 350px
+}
+
+
+
+/* ---------------end of albums stuff----------------*/
+
 
 
 
@@ -154,16 +209,42 @@ body {
 }
 
 
+.fancybox-skin {
+    background: none;
+    border-radius: 1px 1px 1px 1px;
+    color: red;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-shadow: none;
+}
+
+
+
+
+.fancybox-title-float-wrap {
+    right: 0;
+    left: 0;
+    padding: 1px;
+}
+.fancybox-title-float-wrap .child {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px ;
+    background-color: white;
+    text-shadow: none;
+    text-align: center;
+    color: black;
+    border-radius: 0;
+    max-width: 300px;
+    display: block;
+    padding: 1px; 
+}
+
+
+
+
 
 .photocontent img:active{
-	max-width: 100%;
-    max-height: 100%;
-    position: fixed;
- } 
-
-
-
-/*.photocontent img:active{
 	max-width: 100%;
     max-height: 100%;
     bottom: 0;
@@ -174,7 +255,66 @@ body {
     top: 0;
     background-color: black;
     opacity: 1;
-}*/
+}
+
+/*
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 100%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+/* position dots in gallery */
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+*/
+
+
+/* ---------------end of photo stuff----------------*/
+
 
 
 
@@ -257,4 +397,16 @@ body {
 	#screen_iPhone4 {
 		display: block;
 	}
+}
+
+
+
+/* full width cells by default */
+.gallery-cell {
+  width: 100%;
+}
+
+@media screen and ( min-width: 768px ) {
+  /* half-width cells for larger devices */
+  .gallery-cell { width: 50%; }
 }
